@@ -1,0 +1,20 @@
+h1{
+    display: none;
+}
+
+.banner {
+    background: url('https://via.placeholder.com/1920x600') no-repeat center center;
+    background-size: cover;
+    height: 600px;
+}
+.banner-text {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.service-icon {
+    font-size: 4rem;
+    color: #007bff;
+}
