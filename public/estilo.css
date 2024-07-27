@@ -1,7 +1,3 @@
-h1{
-    display: none;
-}
-
 .banner {
     background: url('https://via.placeholder.com/1920x600') no-repeat center center;
     background-size: cover;
@@ -14,7 +10,62 @@ h1{
     top: 50%;
     transform: translateY(-50%);
 }
-.service-icon {
-    font-size: 4rem;
-    color: #007bff;
+
+.logo{
+    width: 120px;
+    height: 80px;
+}
+
+.imagecard{
+    width: 200px;
+    height: 200px;
+}
+
+footer {
+    background-color: #1b1b1b;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.socials {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .footer-content {
+        padding: 0 10px;
+    }
+
+    .socials {
+        flex-direction: column;
+    }
+
+    .socials li {
+        margin: 5px 0;
+    }
 }
