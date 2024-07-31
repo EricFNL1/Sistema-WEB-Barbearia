@@ -1,16 +1,3 @@
-.banner {
-    background: url('https://via.placeholder.com/1920x600') no-repeat center center;
-    background-size: cover;
-    height: 600px;
-}
-.banner-text {
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
 .logo{
     width: 120px;
     height: 80px;
@@ -19,6 +6,29 @@
 .imagecard{
     width: 200px;
     height: 200px;
+    border-radius: 50%;
+   /* animation: 
+        pulso 1.5s infinite ease-in-out;
+        */
+}
+
+@keyframes pulso{
+    50%{
+        transform: translateY(-5%);
+    }
+}
+
+.banner {
+    background: url('img/backgroundimage.png') no-repeat center center;
+    background-size: cover;
+    height: 400px;
+}
+.banner-text {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 footer {
@@ -68,4 +78,53 @@ footer {
     .socials li {
         margin: 5px 0;
     }
+}
+
+#cab a:link, #cab a:visited{
+
+    color: #ffffff;
+    padding: 8px 12px;
+}
+
+#cab a:hover{
+
+    color: white;
+    background: rgba(255, 255, 255, 0.384);
+    text-decoration: none;
+}
+
+/* Estilo inicial para o contêiner da imagem */
+.image-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+/* Estilo inicial para a imagem */
+.image-container img {
+    transition: transform 0.3s ease;
+}
+
+/* Efeito de hover na imagem (zoom in) */
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+/* Estilo inicial para o pseudo-elemento ::after */
+.image-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* Fundo semi-transparente */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Evita que o pseudo-elemento interfira no hover da imagem */
+}
+
+/* Efeito de hover para mostrar o ::after */
+.image-container:hover::after {
+    opacity: 1;
 }

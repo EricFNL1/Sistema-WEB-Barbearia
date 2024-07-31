@@ -19,13 +19,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Serviços</a>
+                        <a class="nav-link" href="#services"></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#testimonials">Agendar</a>
+                    <li id="cab" class="nav-item">
+                        <a class="nav-link" href="{{route('baberon.index')}}">AGENDAR</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contato</a>
+                    <li id="cab" class="nav-item">
+                        <a class="nav-link" href="#contact">CONTATO</a>
+                    </li>
+                    <li id="cab" class="nav-item">
+                        <a class="nav-link" href="{{ route('login') }}">LOGIN</a>
                     </li>
                 </ul>
             </div>
@@ -44,17 +47,17 @@
     <section id="services" class="py-5">
         <div class="container">
             <div class="row text-center">
-                <div class="col-lg-4">
+                <div class="col-lg-4 image-container">
                     <h3>Corte de Cabelo</h3>
                     <p>Especializados em diversos estilos de corte.</p>
                     <img class="imagecard" src="img/Corte.jpg" alt="">
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 image-container">
                     <h3>Barba</h3>
                     <p>Tratamento completo para uma barba impecável.</p>
                     <img class="imagecard" src="img/teste1.jpg" alt="">
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 image-container tex">
                     <h3>Sombrancelha</h3>
                     <p>Cuidados especiais para sua sombrancelha.</p>
                     <img class="imagecard" src="img/teste2.jpg" alt="">
@@ -125,7 +128,7 @@
         <p>&copy; 2024 Barbearia RD. Todos os direitos reservados.</p>
             <ul class="socials">
              <li><a href="https://www.facebook.com/arrazusrd/?locale=pt_BR"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" alt="Facebook"></a></li>
-             <li><a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAUVBMVEVHcEzz9PP3+Pfq7er19vb//v/8/PyltKrx+PKz5b1z04cwxlYMwUMAvCkAvjMAvzoDwUBGTUiH2JiY3aXX8Nxcznbo6ulJymfQ1NHJzcq9wr8gaKU6AAAAG3RSTlMAOlmJ2f//Lvj+/v///////xX+/v7+rP56aF7BK/qjAAABgklEQVR4AX2Sh5qEMAiEbYyJqXa993/QAza5z2v7b8UMMKDNN9qu77u2+Yd+oMLQ/3UMeoCfktHIVTs5791kRWvGb73BV6YQU2ZSDJPo28c5hzYk/0UKlghfipnzl+C/ERZWVMHA59H7nL8pVp6mUTqp7310Ln1TbESdCtgQJ0fO2J+KnNl4cbhGnx0b3aJ/EO1rkoPIZZ9WAuCeNhLnHGrRBJUDtH53YdQmyEaWL1Lh+yCSxEsoeQn4btJr27kZQYtclym279uSqqMI1lTntqpI6VlhVg9M9gArsg92Cal6mHlPdfx8Emg75S6YV9dNN3WAaskTsi0Zh6bEMUH2cLHLqvDsA4LsTjzeerNhqvscJpYwa5Q9gS0w/XODKbjF2jPK3PXJrIMWcooxiyGSAkKvHX+QHICPRhnYQ0mr5LADpYFuShunWIeJ2VI5Z25gM8TA7jFEfu9Whr2awoEKi8ymYmAYm4oBh8fHfA8vESRme5URxz0XN9cxMMelcYWDt3wCfLshX3540l4AAAAASUVORK5CYII=" alt="WhatsApp"></a></li>
+             <li><a href="https://w.app/csCWQp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAUVBMVEVHcEzz9PP3+Pfq7er19vb//v/8/PyltKrx+PKz5b1z04cwxlYMwUMAvCkAvjMAvzoDwUBGTUiH2JiY3aXX8Nxcznbo6ulJymfQ1NHJzcq9wr8gaKU6AAAAG3RSTlMAOlmJ2f//Lvj+/v///////xX+/v7+rP56aF7BK/qjAAABgklEQVR4AX2Sh5qEMAiEbYyJqXa993/QAza5z2v7b8UMMKDNN9qu77u2+Yd+oMLQ/3UMeoCfktHIVTs5791kRWvGb73BV6YQU2ZSDJPo28c5hzYk/0UKlghfipnzl+C/ERZWVMHA59H7nL8pVp6mUTqp7310Ln1TbESdCtgQJ0fO2J+KnNl4cbhGnx0b3aJ/EO1rkoPIZZ9WAuCeNhLnHGrRBJUDtH53YdQmyEaWL1Lh+yCSxEsoeQn4btJr27kZQYtclym279uSqqMI1lTntqpI6VlhVg9M9gArsg92Cal6mHlPdfx8Emg75S6YV9dNN3WAaskTsi0Zh6bEMUH2cLHLqvDsA4LsTjzeerNhqvscJpYwa5Q9gS0w/XODKbjF2jPK3PXJrIMWcooxiyGSAkKvHX+QHICPRhnYQ0mr5LADpYFuShunWIeJ2VI5Z25gM8TA7jFEfu9Whr2awoEKi8ymYmAYm4oBh8fHfA8vESRme5URxz0XN9cxMMelcYWDt3wCfLshX3540l4AAAAASUVORK5CYII=" alt="WhatsApp"></a></li>
              <li><a href="https://www.instagram.com/daniel_rdbarbearia/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png" alt="Instagram"></a></li>
             </ul>
         </div>
